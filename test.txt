@@ -1,0 +1,135 @@
+if __name__ == "__main__":
+    print("Running 1040NR Tax Filing Assistant - Example Queries...\n")
+
+    # ============================================
+    # TASK 1: REQUEST & RECEIVE INFORMATION
+    # ============================================
+    
+    # Example 1: Check Personal Information
+    ask_question("What is my current US address?", "POLVERARIGI")
+    
+    # Example 2: Check ITIN Status
+    ask_question("Do I have an ITIN number? Is it still valid?", "POLVERARIGI")
+    
+    # Example 3: Previous Year Tax Return
+    ask_question("Do you have my last year's 1040NR tax return?", "POLVERARIGI")
+    
+    # Example 4: Income Information
+    ask_question("What US income sources did I report last year?", "POLVERARIGI")
+    
+    # Example 5: Real Estate Holdings
+    ask_question("Do I own any US real estate properties?", "POLVERARIGI")
+    
+    # Example 6: Country of Residence
+    ask_question("What is my country of residence?", "POLVERARIGI")
+    
+    # Example 7: Date of Birth
+    ask_question("What is my date of birth on file?", "POLVERARIGI")
+
+    # ============================================
+    # TASK 2: ADD-ON SERVICES
+    # ============================================
+    
+    # Example 8: Check Previous Add-ons
+    ask_question("What add-on forms did I file last year?", "POLVERARIGI")
+    
+    # Example 9: Investment Income
+    ask_question("Did I have any investment income last year? Which forms?", "POLVERARIGI")
+    
+    # Example 10: Form 1042-S
+    ask_question("Do I have Form 1042-S from last year?", "POLVERARIGI")
+    
+    # Example 11: Schedule C (Self-Employment)
+    ask_question("Did I file Schedule C for self-employment income?", "POLVERARIGI")
+    
+    # Example 12: Mortgage Information
+    ask_question("Do I have any mortgage interest payments? Form 1098?", "POLVERARIGI")
+    
+    # Example 13: Foreign Declarations
+    ask_question("Did I file any foreign withholding forms like 8288-A?", "POLVERARIGI")
+    
+    # Example 14: Real Estate Forms
+    ask_question("What real estate forms did I submit? Schedule E or 1099-A?", "POLVERARIGI")
+
+    # ============================================
+    # CONVERSATIONAL QUERIES
+    # ============================================
+    
+    # Example 15: General Start
+    ask_question("I need help filing my 1040NR tax return", "POLVERARIGI")
+    
+    # Example 16: Missing Documents
+    ask_question("What documents are missing from my tax file?", "POLVERARIGI")
+    
+    # Example 17: Complete Status Check
+    ask_question("Is my tax return complete? What else do you need?", "POLVERARIGI")
+    
+    # Example 18: Year-over-Year Comparison
+    ask_question("What changed from last year to this year in my tax situation?", "POLVERARIGI")
+    
+    # Example 19: Specific Form Query
+    ask_question("Show me all 1099 forms I submitted", "POLVERARIGI")
+    
+    # Example 20: Property Details
+    ask_question("What are the details of my US properties?", "POLVERARIGI")
+
+    # ============================================
+    # SMART WORKFLOW QUESTIONS
+    # ============================================
+    
+    # Example 21: Tax Refund Status
+    ask_question("What was my tax refund amount last year?", "POLVERARIGI")
+    
+    # Example 22: Occupation Information
+    ask_question("What is my occupation and source of US income?", "POLVERARIGI")
+    
+    # Example 23: Authorization Forms
+    ask_question("Did I authorize anyone to represent me with IRS using Form 2848?", "POLVERARIGI")
+    
+    # Example 24: Foreign Corporate Interests
+    ask_question("Do I have foreign corporate interests requiring Form 5471?", "POLVERARIGI")
+    
+    # Example 25: W7 Form Status
+    ask_question("Do I need to apply for ITIN using Form W7?", "POLVERARIGI")
+
+
+
+# Categorized by Use Case:
+
+# THESE ARE THE MOST IMPORTANT TO TEST:
+
+# 1. Check if data exists (should NOT ask again)
+ask_question("What is my current address?", "POLVERARIGI")
+
+# 2. Check previous year's forms (smart suggestions)
+ask_question("What forms did I file last year?", "POLVERARIGI")
+
+# 3. Identify missing information (should ask for it)
+ask_question("What documents am I missing for 1040NR?", "POLVERARIGI")
+
+# 4. Workflow initiation (should guide through process)
+ask_question("Help me file my 1040NR return", "POLVERARIGI")
+
+# 5. Specific form verification
+ask_question("Do I have Form 1098 for mortgage interest?", "POLVERARIGI")
+
+
+Quick Test Suite (5 Questions Only):
+
+if __name__ == "__main__":
+    print("🧪 Quick Test Suite - 1040NR RAG System\n")
+    
+    # Test 1: Personal Info Retrieval
+    ask_question("What is my full legal name and address?", "POLVERARIGI")
+    
+    # Test 2: Previous Year Reference
+    ask_question("What add-on forms did I use last year?", "POLVERARIGI")
+    
+    # Test 3: Document Status Check
+    ask_question("Do I have my last year's 1040NR return?", "POLVERARIGI")
+    
+    # Test 4: Workflow Guidance
+    ask_question("I want to file my taxes. What do you need from me?", "POLVERARIGI")
+    
+    # Test 5: Specific Form Query
+    ask_question("Show me all my real estate documents", "POLVERARIGI")
